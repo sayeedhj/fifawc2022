@@ -1,0 +1,311 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+/* Banner Section  */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2D25A0;
+   margin-bottom: 50px;
+   padding-bottom: 100px;
+   padding-top: 40px;
+
+}
+.banner-image img{
+    width: 400px;
+    margin-top: 20px;
+}
+
+.banner-text{
+    margin-top: 130px;
+    color: white;
+}
+.banner-text h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner-text a{
+text-decoration: none;
+background-color: #E02C6D ;
+padding: 8px;
+color: white;
+border-radius: 2px ;
+}
+
+
+.player {
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(207, 197, 197);
+    border-radius: 5px;
+}
+
+.player-photo img {
+    width: 95%;
+    padding: 8px;
+
+}
+
+.player-name {
+    text-align: justify;
+    padding: 8px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    margin-bottom: 165px;
+    background-color: whitesmoke;
+}
+
+
+/* Highlight Section  */
+.match-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+    margin-bottom: 0;
+    padding: 50px 70px 0 70px;
+    align-items: center;
+    
+}
+
+iframe{
+    width: 600px;
+}
+.highlight-text {
+    width: 100%;
+    height: 309px;
+    padding-top: 30px;
+    text-align: justify;
+    
+}
+
+.highlight-text a {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding:   10px 50px;
+    margin-top: 10px;
+}
+
+.highlight-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.highlight-text p {
+    margin-bottom: 20px;
+}
+
+
+/* Stadium Section  */
+.vanue-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.vanue {
+    width: 100%;
+
+}
+
+.stadium {
+    position: relative;
+}
+
+.stadium-detail {
+    position: absolute;
+    top: 0;
+    display: none;
+    color: white;
+}
+
+.stadium:hover .stadium-detail {
+    display: block;
+    background-color: rgba(78, 66, 45, 0.719);
+}
+
+
+/* Footer Section  */
+.ggg {
+    max-width: 340px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+.ggg img {
+    width: 100%;
+}
+footer , .fta{
+    text-align: center;
+}
+
+
+
+/* Media Query  */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0;
+        padding: 50px 0;
+    }
+
+
+
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .banner-items {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .banner-text {
+        padding-left: 0;
+        padding-top: 55px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+    }
+
+    .vanue-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .vanue {
+        margin-bottom: 15px;
+    }
+
+    .vanue-image {
+        width: 100%;
+    }
+
+    .vanue-image img {
+        width: 100%;
+    }
+
+    
+
+    .match-highlights {
+        display: none;
+    }
+
+    .match-highlights {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ggg {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .ggg img {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .banner-items {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .banner-text {
+        padding-left: 0;
+        padding-top: 55px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+    }
+
+    .ggg {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .vanue-image {
+        width: 100%;
+    }
+
+    .vanue-image img {
+        width: 100%;
+    }
+
+    .ggg img {
+        width: 100%;
+    }
+
+    .players {
+        /* display: flex; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding: 30px 0;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .match-highlights {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .highlight-text {
+        height: 309px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .vanue-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .vanue-image {
+        width: 100%;
+    }
+
+    .vanue-image img {
+        width: 100%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .footer-img {
+        display: block;
+    }
+
+    .vanue {
+        margin-bottom: 15px;
+    }
+}
