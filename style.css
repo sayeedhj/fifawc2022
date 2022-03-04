@@ -38,6 +38,8 @@ border-radius: 2px ;
 }
 
 
+/* Player Section  */
+
 .player {
     background-color: white;
     box-shadow: 1px 1px 1px rgb(207, 197, 197);
@@ -73,6 +75,7 @@ border-radius: 2px ;
     margin-bottom: 0;
     padding: 50px 70px 0 70px;
     align-items: center;
+    margin-bottom: 150px;
     
 }
 
@@ -106,36 +109,30 @@ iframe{
 
 
 /* Stadium Section  */
-.vanue-container {
+.stadiums .stadium img{
+    width: 350px;
+    padding: 50px 50px 0px 50px;
+
+}
+
+.stadium-text{
+    padding: 0px 50px 0px 50px;
+}
+
+.stadiums .stadium:hover{
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.stadiums {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.vanue {
-    width: 100%;
-
-}
-
-.stadium {
-    position: relative;
-}
-
-.stadium-detail {
-    position: absolute;
-    top: 0;
-    display: none;
-    color: white;
-}
-
-.stadium:hover .stadium-detail {
-    display: block;
-    background-color: rgba(78, 66, 45, 0.719);
+    justify-content: space-around;
 }
 
 
 /* Footer Section  */
-.ggg {
+.footerimg {
     max-width: 340px;
     width: 100%;
     padding: 0 15px;
@@ -143,7 +140,7 @@ iframe{
     margin: 10px auto;
 }
 
-.ggg img {
+.footerimg img {
     width: 100%;
 }
 footer , .fta{
@@ -153,8 +150,6 @@ footer , .fta{
 
 
 /* Media Query  */
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -166,6 +161,10 @@ footer , .fta{
     }
 
 
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     .banner-title {
@@ -185,22 +184,41 @@ footer , .fta{
         margin-bottom: 50px;
     }
 
-    .vanue-container {
+    .stadiums {
         display: flex;
         flex-direction: column;
+        padding: 0%;
 
     }
 
-    .vanue {
+    .stadium {
         margin-bottom: 15px;
     }
+    .stadiums .stadium p{
+        text-align: justify;
 
-    .vanue-image {
+    }
+
+    .stadium-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .stadium-image img {
         width: 100%;
     }
 
-    .vanue-image img {
-        width: 100%;
+    .stadiums .stadium{
+        display: flex;
+        text-align: center;
+    }
+    .stadiums .stadium .stadium-text{
+margin-top: 80px;
+    }
+
+    .stadiums .stadium:hover{
+        background-color: none
+        ;
     }
 
     
@@ -215,15 +233,26 @@ footer , .fta{
         flex-direction: column;
     }
 
-    .ggg {
+    .footerimg {
         width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
     }
 
-    .ggg img {
+    .footerimg img {
         width: 100%;
     }
+
+    .iframe{
+        max-width: 100%;
+    }
+    
+    .iframe iframe {
+        width: 100%;
+    }
+
+    
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -241,26 +270,28 @@ footer , .fta{
         margin-bottom: 50px;
     }
 
-    .ggg {
+    .banner-image img{
+        width: 99%;
+    }
+
+    .footerimg {
         width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
     }
 
-    .vanue-image {
-        width: 100%;
+    .stadiums .stadium{
+
+        display: flex;
+        flex-direction: column;
     }
 
-    .vanue-image img {
-        width: 100%;
-    }
 
-    .ggg img {
+    .footerimg img {
         width: 100%;
     }
 
     .players {
-        /* display: flex; */
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0;
@@ -283,19 +314,7 @@ footer , .fta{
         margin-bottom: 50px;
     }
 
-    .vanue-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .vanue-image {
-        width: 100%;
-    }
-
-    .vanue-image img {
-        width: 100%;
-    }
+   
 
     footer {
         display: block;
@@ -303,9 +322,5 @@ footer , .fta{
 
     .footer-img {
         display: block;
-    }
-
-    .vanue {
-        margin-bottom: 15px;
     }
 }
