@@ -152,7 +152,7 @@ footer , .fta{
 /* Media Query  */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .players {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -217,8 +217,9 @@ margin-top: 80px;
     }
 
     .stadiums .stadium:hover{
-        background-color: none
-        ;
+        background:none;
+        border-radius: 0px;
+        box-shadow: 0px;
     }
 
     
@@ -281,9 +282,20 @@ margin-top: 80px;
     }
 
     .stadiums .stadium{
-
         display: flex;
         flex-direction: column;
+        padding: 20px;
+    }
+
+    .stadiums .stadium img{
+        padding: 0px;
+        width: 100%;
+    }
+
+    .stadiums .stadium:hover{
+        background:none;
+        border-radius: 0px;
+        box-shadow: 0px;
     }
 
 
